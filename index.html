@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+            rel="stylesheet"
+        />
+        <title>Zjisti, kdo má dnes svátek</title>
+    </head>
+    <body>
+        <h1>Databáze svátků jmen</h1>
+        <div class="card todays-name-section">
+            <p class="actual-day-name">Dnes má svátek <span id="today-name"></span></p>
+        </div>
+        <div class="card card-name-search">
+            <h2>Zjistit datum svátku podle jména</h2>
+            <input class="input-field" type="text" name="name-input" id="name-input" placeholder="Jméno" />
+            <input
+                class="input-button name-input-button"
+                type="button"
+                value="Zjistit datum"
+                onclick="getDateByName()"
+            />
+            <p class="hidden" id="date-by-name"></p>
+        </div>
+        <div class="card card-date-search">
+            <h2>Zjistit, kdo má svátek podle data</h2>
+            <input class="input-field" type="date" id="date-input" />
+            <input
+                class="input-button date-input-button"
+                type="button"
+                value="Zjistit jméno"
+                onclick="getNameByDate()"
+            />
+
+            <p class="hidden" id="name-by-date"></p>
+        </div>
+        <script src="./datesNamesFunction.js"></script>
+    </body>
+</html>

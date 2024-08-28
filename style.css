@@ -1,0 +1,182 @@
+* {
+    font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: rgb(251, 251, 232);
+    //margin: 10%;
+}
+
+h1 {
+    width: 500px;
+    text-align: center;
+    font-family: "PT Serif", serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1rem;
+    margin-top: 20px;
+}
+
+p.actual-day-name {
+    font-size: 1.2rem;
+    margin-top: 0;
+}
+
+.hidden {
+    display: none;
+}
+
+.card {
+    border-radius: 10px;
+    height: fit-content;
+    width: 500px;
+    padding: 20px;
+    padding-bottom: 30px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.todays-name-section {
+    background-color: rgb(179, 233, 145);
+    padding-bottom: 20px;
+}
+
+.card-name-search {
+    background-color: rgb(187, 224, 237);
+}
+
+.card-date-search {
+    background-color: rgb(244, 189, 189);
+}
+
+.input-button {
+    color: white;
+    //font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin-left: 10px;
+}
+
+.name-input-button {
+    background-color: rgb(1, 139, 190);
+}
+
+.date-input-button {
+    background-color: rgb(255, 77, 77);
+}
+
+.input-field {
+    background-color: rgb(251, 251, 232);
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+@media (max-width: 600px) {
+    body {
+        text-align: center;
+    }
+
+    h1 {
+        max-width: 250px;
+        margin: auto;
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+
+    p {
+        margin: 0;
+    }
+
+    .card {
+        // display: flex;
+        // flex-direction: column;
+        // justify-content: center;
+        width: 80%;
+    }
+
+    .input-field {
+        //width: 50%;
+        align-items: center;
+        margin: auto;
+        margin-bottom: 15px;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        max-width: 250px;
+        margin: auto;
+    }
+
+    p {
+        max-width: 200px;
+        margin: auto;
+        margin-top: 10px;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 80%;
+    }
+
+    .input-field {
+        margin-top: 20px;
+    }
+
+    .input-button {
+        width: 125px;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 350px) {
+    h1 {
+        font-size: 1.5rem;
+        max-width: 150px;
+    }
+
+    h2 {
+        font-size: 1rem;
+        max-width: 200px;
+    }
+
+    p.actual-day-name {
+        font-size: 1rem;
+        max-width: 150px;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    .input-field {
+        width: 150px;
+        margin-bottom: 10px;
+    }
+
+    .input-button {
+        width: 150px;
+    }
+}
+
+//responsivita webu musí být nastavená do minimální velikosti obrazovky 240px
