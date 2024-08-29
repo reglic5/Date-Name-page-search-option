@@ -2231,11 +2231,13 @@ function outputMatchingNames(date, elementId) {
     }
 
     const outputElement = document.getElementById(elementId);
-    if (matchingNames.length > 0) {
+    if (matchingNames.length === 1) {
+        /*jak zobrazit, když odpověď je jen jedno jméno */
+        outputElement.innerHTML = matchingNames;
+    } else if (matchingNames.length > 1) {
         /* více jak jedno jméno */
         //kontrola, jestli array=pole má v sobě nějaké hodnoty
         outputElement.innerHTML = matchingNames.slice(0, -1).join(", ") + " a " + matchingNames.at(-1);
-        B;
         /*sdružená arrays do stringu; v případě více jak jednoho jména spojení pomocí "a"; v případě více jako dvou jmen, "a" u dvou poseldních*/
     } else {
         outputElement.innerHTML = "Dnes nemá nikdo svátek.";
